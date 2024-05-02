@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "460045627504",
+    "project_id": "ai-trip-planner-acf1f",
+    "storage_bucket": "ai-trip-planner-acf1f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460045627504:android:f5c9eb2540b955bf1a84b5",
+        "android_client_info": {
+          "package_name": "com.flutterflowdevs.travelmonkey"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460045627504-u9tuel5bffehfrjdet8aecajqicgamdv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.flutterflowdevs.travelmonkey",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "460045627504-4hc6sh1i8ho1klk90tv28thvkfmfq2a3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAx0Td59rdBoCyfoi-TBKYD7GQ-NSgIl3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "460045627504-4hc6sh1i8ho1klk90tv28thvkfmfq2a3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "460045627504-0m783337gf9ibv9iaufgj4m2ourlipie.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.harshittravelapp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460045627504:android:f1279a827b755e861a84b5",
+        "android_client_info": {
+          "package_name": "com.mycompany.harshittravelapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460045627504-90np8c92qob8d9de8ji56f5953fanp66.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mycompany.harshittravelapp",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "460045627504-hhmtebus48jfqkv0fvvvfthmrtf2drfs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mycompany.harshittravelapp",
+            "certificate_hash": "f270e54553cfa86d5c1dbbc95dc825de8cfdb8cb"
+          }
+        },
+        {
+          "client_id": "460045627504-4hc6sh1i8ho1klk90tv28thvkfmfq2a3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAx0Td59rdBoCyfoi-TBKYD7GQ-NSgIl3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "460045627504-4hc6sh1i8ho1klk90tv28thvkfmfq2a3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "460045627504-0m783337gf9ibv9iaufgj4m2ourlipie.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.harshittravelapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
