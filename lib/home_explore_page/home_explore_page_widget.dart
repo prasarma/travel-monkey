@@ -1,11 +1,11 @@
 import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/components/dance_monkey_loader_widget.dart';
-import '/components/favorites_card_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/tobedelete/favorites_card/favorites_card_widget.dart';
 import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
@@ -478,147 +478,157 @@ class _HomeExplorePageWidgetState extends State<HomeExplorePageWidget> {
                       ],
                     );
                   } else {
-                    return Column(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        Stack(
-                          children: [
-                            Column(
-                              mainAxisSize: MainAxisSize.max,
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
-                                      16.0, 16.0, 16.0, 0.0),
-                                  child: Row(
-                                    mainAxisSize: MainAxisSize.max,
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Text(
-                                        '     ',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              fontFamily: 'Readex Pro',
-                                              fontSize: 24.0,
-                                              letterSpacing: 0.0,
-                                              fontWeight: FontWeight.w500,
-                                            ),
-                                      ),
-                                      Text(
-                                        'Home',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              fontFamily: 'Readex Pro',
-                                              fontSize: 24.0,
-                                              letterSpacing: 0.0,
-                                              fontWeight: FontWeight.w500,
-                                            ),
-                                      ),
-                                      FlutterFlowIconButton(
-                                        borderColor:
-                                            FlutterFlowTheme.of(context).error,
-                                        borderRadius: 20.0,
-                                        borderWidth: 1.0,
-                                        buttonSize: 40.0,
-                                        fillColor: FlutterFlowTheme.of(context)
-                                            .primary,
-                                        icon: Icon(
-                                          Icons.add,
-                                          color: FlutterFlowTheme.of(context)
-                                              .secondaryBackground,
-                                          size: 24.0,
+                    return SingleChildScrollView(
+                      child: Column(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Stack(
+                            children: [
+                              Column(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                        16.0, 16.0, 16.0, 0.0),
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Text(
+                                          '     ',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyMedium
+                                              .override(
+                                                fontFamily: 'Readex Pro',
+                                                fontSize: 24.0,
+                                                letterSpacing: 0.0,
+                                                fontWeight: FontWeight.w500,
+                                              ),
                                         ),
-                                        onPressed: () async {
-                                          context
-                                              .pushNamed('ChooseLocationPage');
-                                        },
-                                      ),
-                                    ],
+                                        Text(
+                                          'Home',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyMedium
+                                              .override(
+                                                fontFamily: 'Readex Pro',
+                                                fontSize: 24.0,
+                                                letterSpacing: 0.0,
+                                                fontWeight: FontWeight.w500,
+                                              ),
+                                        ),
+                                        FlutterFlowIconButton(
+                                          borderColor:
+                                              FlutterFlowTheme.of(context)
+                                                  .error,
+                                          borderRadius: 20.0,
+                                          borderWidth: 1.0,
+                                          buttonSize: 40.0,
+                                          fillColor:
+                                              FlutterFlowTheme.of(context)
+                                                  .primary,
+                                          icon: Icon(
+                                            Icons.add,
+                                            color: FlutterFlowTheme.of(context)
+                                                .secondaryBackground,
+                                            size: 24.0,
+                                          ),
+                                          onPressed: () async {
+                                            context.pushNamed(
+                                                'ChooseLocationPage');
+                                          },
+                                        ),
+                                      ],
+                                    ),
                                   ),
-                                ),
-                                Builder(
-                                  builder: (context) {
-                                    final tripHistoryData =
-                                        homeExplorePageTravelDataRecordList
-                                            .map((e) => e)
-                                            .toList();
-                                    return ListView.builder(
-                                      padding: const EdgeInsets.fromLTRB(
-                                        0,
-                                        12.0,
-                                        0,
-                                        0,
-                                      ),
-                                      shrinkWrap: true,
-                                      scrollDirection: Axis.vertical,
-                                      itemCount: tripHistoryData.length,
-                                      itemBuilder:
-                                          (context, tripHistoryDataIndex) {
-                                        final tripHistoryDataItem =
-                                            tripHistoryData[
-                                                tripHistoryDataIndex];
-                                        return InkWell(
-                                          splashColor: Colors.transparent,
-                                          focusColor: Colors.transparent,
-                                          hoverColor: Colors.transparent,
-                                          highlightColor: Colors.transparent,
-                                          onTap: () async {
-                                            setState(() {
-                                              FFAppState().jsondataSample =
+                                  Builder(
+                                    builder: (context) {
+                                      final tripHistoryData =
+                                          homeExplorePageTravelDataRecordList
+                                              .map((e) => e)
+                                              .toList();
+                                      return ListView.builder(
+                                        padding: const EdgeInsets.fromLTRB(
+                                          0,
+                                          12.0,
+                                          0,
+                                          0,
+                                        ),
+                                        shrinkWrap: true,
+                                        scrollDirection: Axis.vertical,
+                                        itemCount: tripHistoryData.length,
+                                        itemBuilder:
+                                            (context, tripHistoryDataIndex) {
+                                          final tripHistoryDataItem =
+                                              tripHistoryData[
+                                                  tripHistoryDataIndex];
+                                          return InkWell(
+                                            splashColor: Colors.transparent,
+                                            focusColor: Colors.transparent,
+                                            hoverColor: Colors.transparent,
+                                            highlightColor: Colors.transparent,
+                                            onTap: () async {
+                                              setState(() {
+                                                FFAppState().jsondataSample =
+                                                    functions
+                                                        .convertStringToJson(
+                                                            tripHistoryDataItem
+                                                                .jsonData);
+                                                FFAppState().selectedStartDate =
+                                                    tripHistoryDataItem
+                                                        .startDate;
+                                                FFAppState().selectedEndDate =
+                                                    tripHistoryDataItem.endDate;
+                                              });
+
+                                              context.pushNamed(
+                                                'TripPage',
+                                                queryParameters: {
+                                                  'cityImage': serializeParam(
+                                                    tripHistoryDataItem
+                                                        .imageUrl,
+                                                    ParamType.String,
+                                                  ),
+                                                  'isFromHome': serializeParam(
+                                                    true,
+                                                    ParamType.bool,
+                                                  ),
+                                                }.withoutNulls,
+                                              );
+                                            },
+                                            child: FavoritesCardWidget(
+                                              key: Key(
+                                                  'Keyxrj_${tripHistoryDataIndex}_of_${tripHistoryData.length}'),
+                                              startDateHistory: dateTimeFormat(
+                                                  'MMMMEEEEd',
+                                                  tripHistoryDataItem
+                                                      .startDate!),
+                                              tripDateHistory:
                                                   functions.convertStringToJson(
                                                       tripHistoryDataItem
-                                                          .jsonData);
-                                              FFAppState().selectedStartDate =
-                                                  tripHistoryDataItem.startDate;
-                                              FFAppState().selectedEndDate =
-                                                  tripHistoryDataItem.endDate;
-                                            });
-
-                                            context.pushNamed(
-                                              'TripPage',
-                                              queryParameters: {
-                                                'cityImage': serializeParam(
+                                                          .jsonData),
+                                              image:
                                                   tripHistoryDataItem.imageUrl,
-                                                  ParamType.String,
-                                                ),
-                                                'isFromHome': serializeParam(
-                                                  true,
-                                                  ParamType.bool,
-                                                ),
-                                              }.withoutNulls,
-                                            );
-                                          },
-                                          child: FavoritesCardWidget(
-                                            key: Key(
-                                                'Keyxrj_${tripHistoryDataIndex}_of_${tripHistoryData.length}'),
-                                            startDateHistory: dateTimeFormat(
-                                                'MMMMEEEEd',
-                                                tripHistoryDataItem.startDate!),
-                                            tripDateHistory:
-                                                functions.convertStringToJson(
-                                                    tripHistoryDataItem
-                                                        .jsonData),
-                                            image: tripHistoryDataItem.imageUrl,
-                                          ),
-                                        );
-                                      },
-                                    );
-                                  },
-                                ),
-                              ].divide(const SizedBox(height: 12.0)),
-                            ),
-                            if (false)
-                              wrapWithModel(
-                                model: _model.danceMonkeyLoaderModel2,
-                                updateCallback: () => setState(() {}),
-                                child: const DanceMonkeyLoaderWidget(),
+                                            ),
+                                          );
+                                        },
+                                      );
+                                    },
+                                  ),
+                                ].divide(const SizedBox(height: 12.0)),
                               ),
-                          ],
-                        ),
-                      ],
+                              if (false)
+                                wrapWithModel(
+                                  model: _model.danceMonkeyLoaderModel2,
+                                  updateCallback: () => setState(() {}),
+                                  child: const DanceMonkeyLoaderWidget(),
+                                ),
+                            ],
+                          ),
+                        ],
+                      ),
                     );
                   }
                 },

@@ -383,58 +383,19 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                     ),
                                   ),
                                 ),
-                                Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
-                                      40.0, 40.0, 40.0, 0.0),
-                                  child: Row(
-                                    mainAxisSize: MainAxisSize.max,
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      Column(
-                                        mainAxisSize: MainAxisSize.max,
-                                        children: [
-                                          SizedBox(
-                                            width: 70.0,
-                                            child: Divider(
-                                              thickness: 1.0,
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .accent4,
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
-                                            8.0, 0.0, 8.0, 0.0),
-                                        child: Text(
-                                          'Or sign in with',
-                                          textAlign: TextAlign.start,
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyMedium
-                                              .override(
-                                                fontFamily: 'Readex Pro',
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .secondaryBackground,
-                                                fontSize: 14.0,
-                                                letterSpacing: 0.0,
-                                                fontWeight: FontWeight.w300,
-                                              ),
-                                        ),
-                                      ),
-                                      Column(
-                                        mainAxisSize: MainAxisSize.max,
-                                        children: [
-                                          InkWell(
-                                            splashColor: Colors.transparent,
-                                            focusColor: Colors.transparent,
-                                            hoverColor: Colors.transparent,
-                                            highlightColor: Colors.transparent,
-                                            onTap: () async {
-                                              context.pushNamed('NotUsedFFMap');
-                                            },
-                                            child: SizedBox(
+                                if (false)
+                                  Padding(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                        40.0, 40.0, 40.0, 0.0),
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          children: [
+                                            SizedBox(
                                               width: 70.0,
                                               child: Divider(
                                                 thickness: 1.0,
@@ -443,96 +404,145 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                                         .accent4,
                                               ),
                                             ),
-                                          ),
-                                        ],
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
-                                      20.0, 24.0, 20.0, 0.0),
-                                  child: Material(
-                                    color: Colors.transparent,
-                                    elevation: 50.0,
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(20.0),
-                                    ),
-                                    child: Container(
-                                      decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryBackground,
-                                        borderRadius:
-                                            BorderRadius.circular(20.0),
-                                      ),
-                                      child: SizedBox(
-                                        width: 200.0,
-                                        height: 50.0,
-                                        child: Stack(
-                                          children: [
-                                            FFButtonWidget(
-                                              onPressed: () async {
-                                                GoRouter.of(context)
-                                                    .prepareAuthEvent();
-                                                final user = await authManager
-                                                    .signInWithGoogle(context);
-                                                if (user == null) {
-                                                  return;
-                                                }
-
-                                                context.goNamedAuth(
-                                                    'CustomNavbar',
-                                                    context.mounted);
-                                              },
-                                              text: 'Google Sign In',
-                                              options: FFButtonOptions(
-                                                width: double.infinity,
-                                                height: 50.0,
-                                                padding: const EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        30.0, 0.0, 0.0, 0.0),
-                                                iconPadding:
-                                                    const EdgeInsetsDirectional
-                                                        .fromSTEB(
-                                                            0.0, 0.0, 0.0, 0.0),
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .secondaryBackground,
-                                                textStyle: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Readex Pro',
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .primary,
-                                                      fontSize: 18.0,
-                                                      letterSpacing: 0.0,
-                                                    ),
-                                                borderSide: const BorderSide(
-                                                  color: Colors.transparent,
+                                          ],
+                                        ),
+                                        Padding(
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  8.0, 0.0, 8.0, 0.0),
+                                          child: Text(
+                                            'Or sign in with',
+                                            textAlign: TextAlign.start,
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  fontFamily: 'Readex Pro',
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .secondaryBackground,
+                                                  fontSize: 14.0,
+                                                  letterSpacing: 0.0,
+                                                  fontWeight: FontWeight.w300,
                                                 ),
-                                                borderRadius:
-                                                    BorderRadius.circular(20.0),
-                                              ),
-                                            ),
-                                            Align(
-                                              alignment: const AlignmentDirectional(
-                                                  -0.78, -0.1),
-                                              child: Image.asset(
-                                                'assets/images/google-color-icon.png',
-                                                width: 26.0,
-                                                height: 26.0,
-                                                fit: BoxFit.fill,
+                                          ),
+                                        ),
+                                        Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          children: [
+                                            InkWell(
+                                              splashColor: Colors.transparent,
+                                              focusColor: Colors.transparent,
+                                              hoverColor: Colors.transparent,
+                                              highlightColor:
+                                                  Colors.transparent,
+                                              onTap: () async {
+                                                context
+                                                    .pushNamed('NotUsedFFMap');
+                                              },
+                                              child: SizedBox(
+                                                width: 70.0,
+                                                child: Divider(
+                                                  thickness: 1.0,
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .accent4,
+                                                ),
                                               ),
                                             ),
                                           ],
                                         ),
+                                      ],
+                                    ),
+                                  ),
+                                if (false)
+                                  Padding(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                        20.0, 24.0, 20.0, 0.0),
+                                    child: Material(
+                                      color: Colors.transparent,
+                                      elevation: 50.0,
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(20.0),
+                                      ),
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          color: FlutterFlowTheme.of(context)
+                                              .secondaryBackground,
+                                          borderRadius:
+                                              BorderRadius.circular(20.0),
+                                        ),
+                                        child: SizedBox(
+                                          width: 200.0,
+                                          height: 50.0,
+                                          child: Stack(
+                                            children: [
+                                              FFButtonWidget(
+                                                onPressed: () async {
+                                                  GoRouter.of(context)
+                                                      .prepareAuthEvent();
+                                                  final user = await authManager
+                                                      .signInWithGoogle(
+                                                          context);
+                                                  if (user == null) {
+                                                    return;
+                                                  }
+
+                                                  context.goNamedAuth(
+                                                      'CustomNavbar',
+                                                      context.mounted);
+                                                },
+                                                text: 'Google Sign In',
+                                                options: FFButtonOptions(
+                                                  width: double.infinity,
+                                                  height: 50.0,
+                                                  padding: const EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          30.0, 0.0, 0.0, 0.0),
+                                                  iconPadding:
+                                                      const EdgeInsetsDirectional
+                                                          .fromSTEB(0.0, 0.0,
+                                                              0.0, 0.0),
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .secondaryBackground,
+                                                  textStyle: FlutterFlowTheme
+                                                          .of(context)
+                                                      .titleSmall
+                                                      .override(
+                                                        fontFamily:
+                                                            'Readex Pro',
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primary,
+                                                        fontSize: 18.0,
+                                                        letterSpacing: 0.0,
+                                                      ),
+                                                  borderSide: const BorderSide(
+                                                    color: Colors.transparent,
+                                                  ),
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          20.0),
+                                                ),
+                                              ),
+                                              Align(
+                                                alignment: const AlignmentDirectional(
+                                                    -0.78, -0.1),
+                                                child: Image.asset(
+                                                  'assets/images/google-color-icon.png',
+                                                  width: 26.0,
+                                                  height: 26.0,
+                                                  fit: BoxFit.fill,
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
                                       ),
                                     ),
                                   ),
-                                ),
                                 Padding(
                                   padding: const EdgeInsetsDirectional.fromSTEB(
                                       20.0, 20.0, 20.0, 0.0),

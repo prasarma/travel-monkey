@@ -1,9 +1,9 @@
-import '/components/activity_header_chips_widget.dart';
-import '/components/hotel_header_chips_widget.dart';
-import '/components/restaurent_header_chips_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/tobedelete/activity_header_chips/activity_header_chips_widget.dart';
+import '/tobedelete/hotel_header_chips/hotel_header_chips_widget.dart';
+import '/tobedelete/restaurent_header_chips/restaurent_header_chips_widget.dart';
 import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:expandable/expandable.dart';
 import 'package:flutter/material.dart';
