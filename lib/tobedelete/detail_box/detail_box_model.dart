@@ -1,5 +1,5 @@
-import '/components/map_details_header_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/tobedelete/map_details_header/map_details_header_widget.dart';
 import 'detail_box_widget.dart' show DetailBoxWidget;
 import 'package:flutter/material.dart';
 

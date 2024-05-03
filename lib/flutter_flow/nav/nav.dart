@@ -178,11 +178,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const EarthWidget(),
         ),
         FFRoute(
-          name: 'splashScreen',
-          path: '/splashScreen',
-          builder: (context, params) => const SplashScreenWidget(),
-        ),
-        FFRoute(
           name: 'HomeExplorePage2',
           path: '/homeExplorePage2',
           builder: (context, params) => const HomeExplorePage2Widget(),
@@ -193,11 +188,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const AIGeneratedPage1Widget(),
         ),
         FFRoute(
-          name: 'FavoritePage',
-          path: '/favoritePage',
-          builder: (context, params) => const FavoritePageWidget(),
-        ),
-        FFRoute(
           name: 'MapPage',
           path: '/mapPage',
           builder: (context, params) => const MapPageWidget(),
@@ -206,11 +196,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'DontDelete',
           path: '/dontDelete',
           builder: (context, params) => const DontDeleteWidget(),
-        ),
-        FFRoute(
-          name: 'FeedbackRating',
-          path: '/feedbackRating',
-          builder: (context, params) => const FeedbackRatingWidget(),
         ),
         FFRoute(
           name: 'RatingPage',
